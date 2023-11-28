@@ -1,0 +1,23 @@
+POST http://localhost:8800/List
+Content-Type: application/json
+
+{
+    "name":"wd",
+    "link":"buddwi@gmail.com"
+}
+
+###
+GET http://localhost:8800/List
+
+###
+DELETE  http://localhost:8800/List/10
+
+
+###
+PUT  http://localhost:8800/List/266
+Content-Type: application/json
+
+{
+    "name":"wd",
+    "link":"buddwi@gmail.com"
+}
