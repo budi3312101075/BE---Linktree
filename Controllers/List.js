@@ -1,11 +1,4 @@
-import mysql from "mysql";
-
-const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "linktree",
-});
+import db from "../Database/Db.js";
 
 export const getList = async (req, res) => {
   const query = "SELECT * FROM list";
