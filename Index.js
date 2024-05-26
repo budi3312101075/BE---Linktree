@@ -3,7 +3,6 @@ import dotenv from "dotenv";
 import ListRoutes from "./Routes/ListRoutes.js";
 import cors from "cors";
 
-// tes
 dotenv.config();
 const app = express();
 
