@@ -4,10 +4,10 @@ import mysql from "mysql";
 dotenv.config();
 
 const dbConfig = {
-  host: "bqrh3wj654xxflfy0uce-mysql.services.clever-cloud.com",
-  user: "ulafcheme4ezjozj",
-  password: "Ti2oX1Wqdp5E1n4CpXh9",
-  database: "bqrh3wj654xxflfy0uce",
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
 };
 
 const db = mysql.createConnection(dbConfig);
